@@ -18,4 +18,4 @@ jobs:
           cx_tenant: ${{ secrets.CX_TENANT }}
           base_uri: ${{ secrets.CX_BASEURI }}
           cx_client_id: ${{ secrets.CXCLIENT_ID }}
-          cx_client_secret: ${{ secrets.CXCLIENT_SECRET }}
+          cx_client_secret: ${{ secrets.CXCLIENT_SECRETS }}
