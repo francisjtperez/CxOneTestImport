@@ -19,5 +19,10 @@ jobs:
           base_uri: ${{ secrets.CX_BASEURI }}
           cx_client_id: ${{ secrets.CXCLIENT_ID }}
           cx_client_secret: ${{ secrets.CXCLIENT_SECRETS }}
-          additional_params: --report-pdf-email antonette.cruz@netrust.com.ph
+          additional_params: --report-format sarif --output-path .
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          # Path to SARIF file relative to the root of the repository
+          sarif_file: cx_result.sarif
           
