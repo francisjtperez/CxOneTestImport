@@ -19,5 +19,5 @@ jobs:
           base_uri: ${{ secrets.CX_BASEURI }}
           cx_client_id: ${{ secrets.CXCLIENT_ID }}
           cx_client_secret: ${{ secrets.CXCLIENT_SECRETS }}
-          additional_params: --report-pdf-email antonette.cruz@netrust.com.ph --threshold "sast-high=10; sast-medium=20; sca-high=10"
+          additional_params: --report-pdf-email antonette.cruz@netrust.com.ph
           
