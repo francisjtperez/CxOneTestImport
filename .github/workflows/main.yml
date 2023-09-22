@@ -25,10 +25,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Checkmarx AST Github Action
-        uses: Checkmarx/ast-github-action@2.0.20
+      - name: Checkmarx scan
+        uses: checkmarx/ast-github-action@main
         with:
           project_name: ${{ secrets.CX_PROJECTNAME }}
           cx_tenant: ${{ secrets.CX_TENANT }}
