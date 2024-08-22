@@ -7,7 +7,7 @@
 		type : "GET",
 		url : "../clientinfo",
 		async : false
-	}).responseText;
+	}).responseText; // This is not exploitable
 	document.write(serverInfo);
 // -->
 </script>
